@@ -54,4 +54,10 @@ O serviço estará disponível em http://localhost:5000.
 py -m pytest
 ```
 
+## Teste HTTP
 
+```bash
+curl --request GET \
+  --url http://localhost:5000/products/1 \
+  --header 'User-Agent: insomnia/9.3.2'
+```
